@@ -1,0 +1,28 @@
+{
+  "name": "wims-api",
+  "version": "0.1.0",
+  "description": "WIMS API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameswolff96/wims-api.git"
+  },
+  "author": "James Wolff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jameswolff96/wims-api/issues"
+  },
+  "homepage": "https://github.com/jameswolff96/wims-api#readme",
+  "dependencies": {
+    "ajv": "^8.13.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  }
+}
