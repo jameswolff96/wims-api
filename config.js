@@ -1,7 +1,7 @@
 module.exports = {
   port: 8080,
   jwtSecret: 'jwt-secret-key-replace-this-key',
-  jwtExpirationInSeconds: 60 * 60,
+  jwtExpirationInSeconds: 60 * 60 * 24,
   roles: {
     USER: 'user',
     ADMIN: 'admin',
