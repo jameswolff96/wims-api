@@ -24,7 +24,11 @@ module.exports = {
     quantity: {
       type: 'number',
     },
-    unitOfMeasure: {
+    defaultUnitOfMeasure: {
+      type: 'string',
+      enum: Object.values(uom),
+    },
+    alternateUnitOfMeasure: {
       type: 'string',
       enum: Object.values(uom),
     },
@@ -38,6 +42,6 @@ module.exports = {
       type: 'string',
     },
   },
-  required: ['name', 'description', 'price'],
+  required: ['name', 'description', 'price', 'quantity', 'defaultUnitOfMeasure', 'location'],
   additionalProperties: false,
 };
