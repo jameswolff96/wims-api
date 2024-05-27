@@ -30,10 +30,14 @@ const ProductModel = {
     allowNull: false,
     defaultValue: 0,
   },
-  unitOfMeasure: {
+  defaultUnitOfMeasure: {
     type: DataTypes.STRING,
     allowNull: false,
     defaultValue: uom.EACH,
+  },
+  alternateUnitOfMeasure: {
+    type: DataTypes.STRING,
+    allowNull: true,
   },
   lastOrdered: {
     type: DataTypes.DATE,
